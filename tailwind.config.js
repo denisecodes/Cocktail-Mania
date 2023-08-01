@@ -6,11 +6,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#FF6363',
-        secondary: {
-          100: '#E2E2D5',
-          200: '8888883'
-        }
+        'cream-yellow': '#fbf8ea',
+        'green': '#9AB3A0',
+        'red': '#D27C67',
+        'orange': '#E4B495'
       },
       fontFamily: {
         heading: ['Pacifico'],
