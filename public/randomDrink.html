@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cocktail Mania - Random Cocktail</title>
+    <title>Your Random Cocktail</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-cream-yellow">
     <img class="w-1/6 mx-auto" src="images/logo.png">
     <h4 class="mt-12 mb-12 pb-2 text-center font-heading font-bold text-2xl">Your chosen drink is...</h4>
     <div class="flex flex-wrap gap-10 justify-center">
-        <a href="recipe.html" class="card" id="drink">
+        <div class="card" id="drink">
             <img id="drinkImage" src="" alt="cocktail image" class="w-full h-30 sm:h-48 object-cover">
             <div class="m-4">
                 <span id="drinkName" class="font-bold"></span>
-                <span id="drinkType" class="block text-gray-500 text-sm">Alcoholic</span>
+                <span id="drinkType" class="block text-gray-700 text-sm py-1"></span>
+                <span class="block text-black text-sm py-1">Ingredients</span>
+                <ul id="ingredientsList" class="text-gray-700 text-sm list-disc ml-3 py-1">
+                </ul>
+                <span class="block text-black text-sm py-1">Instructions</span>
+                <p id="instructions" class="text-gray-700 text-sm"></p>
             </div>
             <div class="badge">
                 <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -23,6 +28,9 @@
                 <span>5 mins</span>
             </div>
         </div>
+    </div>
+    <div class="flex items-center justify-center">
+        <a href="index.html" class="mb-12 bg-green btn" id="retryBtn">Get a new Cocktail?</a>
     </div>
     <script src="randomDrink.js"></script>
 </body>

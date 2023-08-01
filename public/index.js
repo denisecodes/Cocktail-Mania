@@ -1,14 +1,3 @@
-// const burger = document.querySelector('#burger');
-// const menu = document.querySelector('#menu');
-
-// burger.addEventListener('click', () => {
-//     if (menu.classList.contains('hidden')) {
-//         menu.classList.remove('hidden');  
-//     } else {
-//         menu.classList.add('hidden');
-//     }
-// })
-
 // Get a random drink
 
 const randomEndpoint = 'https://www.thecocktaildb.com/api/json/v1/1/random.php';
@@ -25,16 +14,7 @@ const getCocktailInfo = () => {
     .catch(error => console.log('Internal Server Error'))}
 
 
-// drinkBtn.addEventListener('click', getCocktailInfo);
-
-// fetch(randomEndpoint)
-// .then(res => res.json())
-// .then(data => {
-// const dataAsString = JSON.stringify(data)
-// const urlWithQueryParams = `randomDrink.html?data=${encodeURIComponent(dataAsString)}`;
-// window.location.href = urlWithQueryParams;
-// })
-// .catch(error => console.log('Internal Server Error'))
+drinkBtn.addEventListener('click', getCocktailInfo);
 
 // Looking for user input
 
@@ -78,4 +58,4 @@ searchBar.addEventListener('keypress', (event) => {
             })
         .catch(error => console.log('Internal Server Error'))
     }
-});
+}); 

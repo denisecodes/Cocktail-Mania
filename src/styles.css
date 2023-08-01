@@ -9,7 +9,7 @@
 }
 
 .card{
-    @apply bg-orange rounded overflow-hidden shadow-md relative mb-12 w-1/2;
+    @apply bg-orange rounded overflow-hidden shadow-md relative mb-12 w-1/2 cursor-pointer;
 } 
 
 .badge{

@@ -21,18 +21,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    console.log({ingredients})
-
 // Display the drink data on the frontend
     const drinkName = document.getElementById('drinkName');
     const drinkImage = document.getElementById('drinkImage');
     const drinkType = document.getElementById('drinkType');
-    drinkName.innerHTML = `${drinkData.strDrink}`;
-    drinkType.innerHTML = `${drinkData.strAlcoholic}`;
+    const ingredientsList = document.getElementById('ingredientsList');
+    const instructions = document.getElementById('instructions')
+    drinkName.innerHTML = drinkData.strDrink;
+    drinkType.innerHTML = drinkData.strAlcoholic;
     drinkImage.setAttribute('src', drinkData.strDrinkThumb);
+    instructions.innerHTML = drinkData.strInstructions
+// Loop through the ingredientsData object
+    for (const ingredient in ingredients) {
+            // Create a new li element
+            const listItem = document.createElement('li');
+            // Set the text content of the li element to the ingredient and its measurement
+            listItem.textContent = `${ingredients[ingredient]} ${ingredient}`;
+            // Append the li element to the ingredients list ul
+            ingredientsList.appendChild(listItem);
+    }
 });
-
-{/* <h2>${drinkData.strDrink}</h2>
-        <p>Type: ${drinkData.strAlcoholic}</p>
-        <p>Ingredients: ${ingredients.join(', ')}</p>
-        <p>Instructions: ${drinkData.strInstructions}</p> */}
