@@ -12,16 +12,29 @@
 // Get a random drink
 
 const randomEndpoint = 'https://www.thecocktaildb.com/api/json/v1/1/random.php';
-const randomDrink = document.getElementById('randomDrink');
+const drinkBtn = document.getElementById('drinkBtn');
 
-randomDrink.addEventListener('click', () => {
+const getCocktailInfo = () => {
     fetch(randomEndpoint)
-    .then(res => {
-        return res.json()
+    .then(response => response.json())
+    .then(data => {
+        const drinkData = encodeURIComponent(JSON.stringify(data));
+        const drinkDataParam = `randomDrink.html?data=${drinkData}`;
+        window.location.href = drinkDataParam;
     })
-    .then(data => console.log(data))
-    .catch(error => console.log('Internal Server Error'))
-})
+    .catch(error => console.log('Internal Server Error'))}
+
+
+// drinkBtn.addEventListener('click', getCocktailInfo);
+
+// fetch(randomEndpoint)
+// .then(res => res.json())
+// .then(data => {
+// const dataAsString = JSON.stringify(data)
+// const urlWithQueryParams = `randomDrink.html?data=${encodeURIComponent(dataAsString)}`;
+// window.location.href = urlWithQueryParams;
+// })
+// .catch(error => console.log('Internal Server Error'))
 
 // Looking for user input
 
