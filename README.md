@@ -26,7 +26,7 @@ Check out the live demo of the Cocktail Mania website [here](https://your-demo-l
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/denisecodes/cocktail-mania.git
+   git clone https://github.com/denisecodes/Cocktail-Mania.git
    ```
 
 2. Install dependencies
