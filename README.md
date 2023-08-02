@@ -43,7 +43,9 @@ Check out the live demo of the Cocktail Mania website [here](https://your-demo-l
 
 ## Website
 
+<img width="500" alt="Screenshot 2023-08-02 at 08 27 45" src="https://github.com/denisecodes/Cocktail-Mania/assets/119052310/6414222d-635b-4872-af82-b8be973eed5c">
 
+<img width="500" alt="Screenshot 2023-08-02 at 08 29 45" src="https://github.com/denisecodes/Cocktail-Mania/assets/119052310/9a91955d-79db-4f7a-afcf-72b06c0160ac">
 
 ## How to Use
 
