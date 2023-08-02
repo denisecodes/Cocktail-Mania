@@ -21,7 +21,7 @@ The application fetches cocktail data from the [TheCocktailDB API](https://www.t
 
 Check out the live demo of the Cocktail Mania website [here](https://your-demo-link.com). -->
 
-## Installation
+## Running the website
 
 1. Clone this repository to your local machine:
 
@@ -40,6 +40,10 @@ Check out the live demo of the Cocktail Mania website [here](https://your-demo-l
    ```bash
    live-server public
    ```
+
+## Website
+
+
 
 ## How to Use
 
