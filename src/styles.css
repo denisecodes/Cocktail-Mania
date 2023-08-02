@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .btn{
-    @apply rounded-full text-xs text-center text-white cursor-pointer tracking-wider px-5 py-3 shadow-sm
+    @apply rounded-full text-xs text-center text-white cursor-pointer tracking-wider px-5 py-3 shadow-sm hover:shadow-md;
 }
 
 .card{
@@ -13,5 +13,5 @@
 } 
 
 .badge{
-    @apply bg-white text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2;
+    @apply bg-white text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2 hidden sm:block;
 }
