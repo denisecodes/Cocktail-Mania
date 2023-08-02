@@ -1,6 +1,6 @@
 # Cocktail Mania
 
-Welcome to the Cocktail Mania! We want to our users to enjoy a cocktail of their choice any time of the day at home. This website allows users to discover and explore a variety of cocktails by generating random cocktail recipes using a cocktail API.
+Welcome to the Cocktail Mania! We want our users to enjoy a cocktail of their choice any time of the day at home. This website allows users to discover and explore a variety of cocktails by generating random cocktail recipes using a cocktail API.
 
 ## Features
 
